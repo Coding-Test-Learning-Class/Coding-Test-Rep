@@ -11,7 +11,7 @@
   * 작성할 때 멤버들을 모두 `Assginee`에 할당해주세요.
 * 현재 Coding-Test-Rep `Repository`를 `fork` 합니다.
 * 문제를 해결하고 해결한 문제를 `Pull Request`합니다.
-  * `Pull Request`방법은 [여기](https://chanhuiseok.github.io/posts/git-3/) 를 참고해주세요.
+  * <b>Git 활용 방법</b>에 관련하여 자세한 방법은 [여기](https://github.com/Coding-Test-Learning-Class/Coding-Test-Rep/wiki/Git-%ED%99%9C%EC%9A%A9-%EB%B0%A9%EB%B2%95) 를 참고해주세요.
 * 해당 문제를 해결하였다면 `Assignee`에 할당된 자신을 해제합니다.
 
 ### 규칙
