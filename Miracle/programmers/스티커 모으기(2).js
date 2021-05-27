@@ -39,4 +39,6 @@ const test1 = [14, 6, 5, 11, 3, 9, 2, 10];
 const test2 = [1,3,2,5,4];
 const test3 = [1,1,99,1,1, 99];
 
+console.log(solution(test1));
 console.log(solution(test2));
+console.log(solution(test3));
