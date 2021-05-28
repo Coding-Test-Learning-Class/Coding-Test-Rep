@@ -24,8 +24,6 @@ function solution(n, stations, w) {
     console.log(firstNeedStation, lastNeedStation);
     answer += firstNeedStation + lastNeedStation;
   })();
-  // stations.unshift(0 - w);
-  // stations.push(n+1 + w);
   
   for(let i=0; i<stations.length - 1; i++){
     const stationA = stations[i];
@@ -33,10 +31,8 @@ function solution(n, stations, w) {
     const difNodesNum = getDifNodesNum(stationA, stationB);
     const needStation = getNeedStation(difNodesNum);
 
-    // console.log(needStation);
     answer += needStation;
   }
-  // console.log(answer);
 
     return answer;
 }
