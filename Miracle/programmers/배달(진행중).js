@@ -1,5 +1,4 @@
 function solution(N, road, K) {
-  var answer = 0;
   const distances = new Array(N).fill(Infinity);
   distances[0] = 0;
   const paths = new Array(N)
@@ -29,6 +28,7 @@ function solution(N, road, K) {
 
   const queue = [0];
   const visited = new Array(N).fill(false);
+
   while(queue.length > 0){
     const currentNode = queue.shift();
     visited[currentNode] = true;
@@ -60,13 +60,6 @@ function solution(N, road, K) {
         }
       }
     });
-
-    // console.log(paths[currentNode]);
-    // console.log(queue);
-    // console.log(nextNodes);
-    // console.log(currentNode);
-    // console.log(['0000',...distances]);
-    // console.log(nextNodes);
   }
   
   return distances.filter(dis=>dis<=K).length;
