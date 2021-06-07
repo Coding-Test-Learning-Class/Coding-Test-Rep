@@ -3,22 +3,15 @@ function solution(arr1, arr2) {
   const column = answer.length;
   const row = answer[0].length;
 
-  // console.log(answer);
-  
   for(let c=0; c<column; c++){
     for(let r=0; r<row; r++){
       let value =0;
-      // console.log("cr", c, r);
       for(let i=0; i<arr1[0].length; i++){
-        // console.log('i is', i);
         value += arr1[c][i] * arr2[i][r];  
-        // console.log(arr1[c][i], arr2[i][r], value);
       }
-      // console.log(value);
       answer[c][r] = value;
     }
   }
-  // console.log(answer);
   return answer;
 }
 
@@ -34,13 +27,5 @@ const test3 = [[
   [4,1,5,6,2],
   [9,2,3,2,4]]
 ]
-// 43 * 34
 
 solution(...test2);
-
-// 1, 4     3, 3
-// 3, 2  *  3, 3
-// 4, 1
-// (1 * 3 + 4 * 3)
-// (3 * 3 + 2 * 3)
-// (4 * 3 + 1 * 3)
